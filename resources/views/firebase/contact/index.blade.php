@@ -9,7 +9,7 @@
                 @endif
                     <div class="card">
                     <div class="card-header">
-                        <h4>Contact List - Total：{{ count($contacts) }}
+                        <h4>Contact List - Total：{{ $contactsCount }}
                             <a href="{{ url('add-contact') }}" class="btn btn-sm btn-primary float-end">Add Contact</a>
                         </h4>
                     </div>
@@ -50,9 +50,6 @@
                                         <td colspan="7">No Record Found!</td>
                                     </tr>
                                 @endforelse
-                                <tr>
-
-                                </tr>
                             </tbody>
                         </table>
                     </div>
